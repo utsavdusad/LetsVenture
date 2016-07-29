@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="UIF-Fv-ei5">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Search Table View Controller-->
+        <scene sceneID="BHG-XE-oLH">
+            <objects>
+                <tableViewController id="UIF-Fv-ei5" customClass="SearchTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="123" sectionHeaderHeight="28" sectionFooterHeight="28" id="uqi-TK-4Qr">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" showsBookmarkButton="YES" id="EK5-6R-WSX">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="uqi-TK-4Qr" id="S3D-KJ-TC5"/>
+                            </connections>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomTableCell" rowHeight="123" id="M6w-n7-xt4">
+                                <rect key="frame" x="0.0" y="72" width="600" height="123"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="M6w-n7-xt4" id="DgZ-hg-3lI">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="122"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="20" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" text="Lorem ipsum." textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7f-wB-k9t">
+                                            <rect key="frame" x="194" y="0.0" width="304" height="91"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="10" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m66-At-Jtu">
+                                            <rect key="frame" x="40" y="27" width="87" height="31"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" tag="30" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nEf-cj-1hE">
+                                            <rect key="frame" x="522" y="35" width="70" height="30"/>
+                                            <state key="normal" title="Bookmark"/>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="m66-At-Jtu" secondAttribute="bottom" constant="33" id="ELc-Xo-9XV"/>
+                                        <constraint firstItem="m66-At-Jtu" firstAttribute="width" secondItem="h7f-wB-k9t" secondAttribute="height" multiplier="59:91" id="Xos-Hn-xN2"/>
+                                        <constraint firstItem="m66-At-Jtu" firstAttribute="leading" secondItem="DgZ-hg-3lI" secondAttribute="leadingMargin" constant="32" id="qeU-sU-dZR"/>
+                                        <constraint firstItem="m66-At-Jtu" firstAttribute="top" secondItem="DgZ-hg-3lI" secondAttribute="topMargin" constant="19" id="r77-M7-gHq"/>
+                                        <constraint firstItem="nEf-cj-1hE" firstAttribute="trailing" secondItem="DgZ-hg-3lI" secondAttribute="trailingMargin" id="xHY-c2-9Nf"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="UIF-Fv-ei5" id="rzr-jl-FsL"/>
+                            <outlet property="delegate" destination="UIF-Fv-ei5" id="y8J-bq-dhA"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="searchBar" destination="EK5-6R-WSX" id="zef-oZ-gTh"/>
+                        <outlet property="searchDisplayController" destination="DU6-ed-Ze5" id="o6H-Si-jID"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b8t-gS-ge5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="DU6-ed-Ze5">
+                    <connections>
+                        <outlet property="delegate" destination="UIF-Fv-ei5" id="neL-Y3-YIk"/>
+                        <outlet property="searchContentsController" destination="UIF-Fv-ei5" id="FfX-fj-nV4"/>
+                        <outlet property="searchResultsDataSource" destination="UIF-Fv-ei5" id="WzV-Df-mkX"/>
+                        <outlet property="searchResultsDelegate" destination="UIF-Fv-ei5" id="DSr-zV-gP3"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="210" y="237"/>
+        </scene>
+    </scenes>
+</document>

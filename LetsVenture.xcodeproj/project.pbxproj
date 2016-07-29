@@ -1,0 +1,351 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9C17D2851D4B83EE008B0667 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C17D2841D4B83EE008B0667 /* main.m */; };
+		9C17D2881D4B83EE008B0667 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C17D2871D4B83EE008B0667 /* AppDelegate.m */; };
+		9C17D28B1D4B83EE008B0667 /* SearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C17D28A1D4B83EE008B0667 /* SearchTableViewController.m */; };
+		9C17D28E1D4B83EE008B0667 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C17D28C1D4B83EE008B0667 /* Main.storyboard */; };
+		9C17D2911D4B83EE008B0667 /* LetsVenture.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9C17D28F1D4B83EE008B0667 /* LetsVenture.xcdatamodeld */; };
+		9C17D2931D4B83EE008B0667 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C17D2921D4B83EE008B0667 /* Assets.xcassets */; };
+		9C17D2961D4B83EE008B0667 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C17D2941D4B83EE008B0667 /* LaunchScreen.storyboard */; };
+		9C17D29F1D4B89C6008B0667 /* Session.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C17D29E1D4B89C6008B0667 /* Session.m */; };
+		9C17D2A41D4BA5E1008B0667 /* LVDictionary+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C17D2A11D4BA5E1008B0667 /* LVDictionary+CoreDataProperties.m */; };
+		9C17D2A51D4BA5E1008B0667 /* LVDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C17D2A31D4BA5E1008B0667 /* LVDictionary.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9C17D2801D4B83ED008B0667 /* LetsVenture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetsVenture.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C17D2841D4B83EE008B0667 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9C17D2861D4B83EE008B0667 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9C17D2871D4B83EE008B0667 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9C17D2891D4B83EE008B0667 /* SearchTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchTableViewController.h; sourceTree = "<group>"; };
+		9C17D28A1D4B83EE008B0667 /* SearchTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchTableViewController.m; sourceTree = "<group>"; };
+		9C17D28D1D4B83EE008B0667 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9C17D2901D4B83EE008B0667 /* LetsVenture.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LetsVenture.xcdatamodel; sourceTree = "<group>"; };
+		9C17D2921D4B83EE008B0667 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9C17D2951D4B83EE008B0667 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9C17D2971D4B83EE008B0667 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C17D29D1D4B89C6008B0667 /* Session.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Session.h; path = LetsVenture/Session.h; sourceTree = "<group>"; };
+		9C17D29E1D4B89C6008B0667 /* Session.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Session.m; path = LetsVenture/Session.m; sourceTree = "<group>"; };
+		9C17D2A01D4BA5E1008B0667 /* LVDictionary+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LVDictionary+CoreDataProperties.h"; sourceTree = "<group>"; };
+		9C17D2A11D4BA5E1008B0667 /* LVDictionary+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LVDictionary+CoreDataProperties.m"; sourceTree = "<group>"; };
+		9C17D2A21D4BA5E1008B0667 /* LVDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVDictionary.h; sourceTree = "<group>"; };
+		9C17D2A31D4BA5E1008B0667 /* LVDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVDictionary.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9C17D27D1D4B83ED008B0667 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9C17D2771D4B83ED008B0667 = {
+			isa = PBXGroup;
+			children = (
+				9C17D2A61D4BA5E8008B0667 /* CoreData */,
+				9C17D29D1D4B89C6008B0667 /* Session.h */,
+				9C17D29E1D4B89C6008B0667 /* Session.m */,
+				9C17D2821D4B83EE008B0667 /* LetsVenture */,
+				9C17D2811D4B83ED008B0667 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9C17D2811D4B83ED008B0667 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9C17D2801D4B83ED008B0667 /* LetsVenture.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9C17D2821D4B83EE008B0667 /* LetsVenture */ = {
+			isa = PBXGroup;
+			children = (
+				9C17D2861D4B83EE008B0667 /* AppDelegate.h */,
+				9C17D2871D4B83EE008B0667 /* AppDelegate.m */,
+				9C17D2891D4B83EE008B0667 /* SearchTableViewController.h */,
+				9C17D28A1D4B83EE008B0667 /* SearchTableViewController.m */,
+				9C17D28C1D4B83EE008B0667 /* Main.storyboard */,
+				9C17D2971D4B83EE008B0667 /* Info.plist */,
+				9C17D2921D4B83EE008B0667 /* Assets.xcassets */,
+				9C17D2941D4B83EE008B0667 /* LaunchScreen.storyboard */,
+				9C17D28F1D4B83EE008B0667 /* LetsVenture.xcdatamodeld */,
+				9C17D2831D4B83EE008B0667 /* Supporting Files */,
+			);
+			path = LetsVenture;
+			sourceTree = "<group>";
+		};
+		9C17D2831D4B83EE008B0667 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9C17D2841D4B83EE008B0667 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9C17D2A61D4BA5E8008B0667 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				9C17D2A01D4BA5E1008B0667 /* LVDictionary+CoreDataProperties.h */,
+				9C17D2A11D4BA5E1008B0667 /* LVDictionary+CoreDataProperties.m */,
+				9C17D2A21D4BA5E1008B0667 /* LVDictionary.h */,
+				9C17D2A31D4BA5E1008B0667 /* LVDictionary.m */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9C17D27F1D4B83ED008B0667 /* LetsVenture */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C17D29A1D4B83EE008B0667 /* Build configuration list for PBXNativeTarget "LetsVenture" */;
+			buildPhases = (
+				9C17D27C1D4B83ED008B0667 /* Sources */,
+				9C17D27D1D4B83ED008B0667 /* Frameworks */,
+				9C17D27E1D4B83ED008B0667 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LetsVenture;
+			productName = LetsVenture;
+			productReference = 9C17D2801D4B83ED008B0667 /* LetsVenture.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9C17D2781D4B83ED008B0667 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Utsav Dusad";
+				TargetAttributes = {
+					9C17D27F1D4B83ED008B0667 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 9C17D27B1D4B83ED008B0667 /* Build configuration list for PBXProject "LetsVenture" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9C17D2771D4B83ED008B0667;
+			productRefGroup = 9C17D2811D4B83ED008B0667 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9C17D27F1D4B83ED008B0667 /* LetsVenture */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9C17D27E1D4B83ED008B0667 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C17D2961D4B83EE008B0667 /* LaunchScreen.storyboard in Resources */,
+				9C17D2931D4B83EE008B0667 /* Assets.xcassets in Resources */,
+				9C17D28E1D4B83EE008B0667 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9C17D27C1D4B83ED008B0667 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C17D28B1D4B83EE008B0667 /* SearchTableViewController.m in Sources */,
+				9C17D2A51D4BA5E1008B0667 /* LVDictionary.m in Sources */,
+				9C17D29F1D4B89C6008B0667 /* Session.m in Sources */,
+				9C17D2911D4B83EE008B0667 /* LetsVenture.xcdatamodeld in Sources */,
+				9C17D2A41D4BA5E1008B0667 /* LVDictionary+CoreDataProperties.m in Sources */,
+				9C17D2881D4B83EE008B0667 /* AppDelegate.m in Sources */,
+				9C17D2851D4B83EE008B0667 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9C17D28C1D4B83EE008B0667 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C17D28D1D4B83EE008B0667 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9C17D2941D4B83EE008B0667 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C17D2951D4B83EE008B0667 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9C17D2981D4B83EE008B0667 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9C17D2991D4B83EE008B0667 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9C17D29B1D4B83EE008B0667 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LetsVenture/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.utsavdusad.LetsVenture;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9C17D29C1D4B83EE008B0667 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LetsVenture/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.utsavdusad.LetsVenture;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9C17D27B1D4B83ED008B0667 /* Build configuration list for PBXProject "LetsVenture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C17D2981D4B83EE008B0667 /* Debug */,
+				9C17D2991D4B83EE008B0667 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C17D29A1D4B83EE008B0667 /* Build configuration list for PBXNativeTarget "LetsVenture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C17D29B1D4B83EE008B0667 /* Debug */,
+				9C17D29C1D4B83EE008B0667 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9C17D28F1D4B83EE008B0667 /* LetsVenture.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9C17D2901D4B83EE008B0667 /* LetsVenture.xcdatamodel */,
+			);
+			currentVersion = 9C17D2901D4B83EE008B0667 /* LetsVenture.xcdatamodel */;
+			path = LetsVenture.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9C17D2781D4B83ED008B0667 /* Project object */;
+}
